@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>S.L Tailors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Custom tailoring for men – shirts, pants, ethnic wear. Based in Secunderabad, Hyderabad." />
+  <meta name="keywords" content="Tailor, Hyderabad, Custom Shirts, Pants, Ethnic Wear, Secunderabad Tailor" />
+  <meta name="theme-color" content="#1d3557" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <!-- Bootstrap & AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #eff1f5;
+      color: #212529;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background-color: #1d3557;
+    }
+
+    .navbar-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .hero {
+      position: relative;
+      background: url('images/pattern1.png') no-repeat center center/cover;
+      height: 100vh;
+      color: #0f0f0f;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .hero .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: calc(2.5rem + 1vw);
+      font-family: 'Playfair Display', serif;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    h2.section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .card h5 {
+      color: #1d3557;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      border-radius: 8px;
+    }
+
+    .position-relative:hover .overlay {
+      opacity: 1;
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #1ebd5a;
+    }
+
+    footer {
+      background-color: #1d3557;
+      color: #ced4da;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    blockquote {
+      background: #fff;
+      border-left: 5px solid #1d3557;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">S.L Tailors</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero">
+  <div class="content" data-aos="fade-down" data-aos-duration="1000">
+    <h1>Welcome to S.L Tailors</h1>
+    <p>Where elegance meets precision stitching.</p>
+  </div>
+</header>
+
+<!-- About Us -->
+<section id="about" class="container" data-aos="fade-up">
+  <h2 class="section-title">About Us</h2>
+  <div class="row align-items-center">
+    <div class="col-md-6 mb-4" data-aos="zoom-in-right">
+      <img src="C:\Users\DELL\Desktop\SLtailor\images/tailor image.jpeg" alt="Tailor at work" class="img-fluid rounded shadow" />
+    </div>
+    <div class="col-md-6" data-aos="fade-left">
+      <p><strong>S.L Tailors</strong> has been delivering high-quality custom tailoring in Hyderabad for over a decade. We specialize in perfectly fitting attire tailored with traditional techniques and a modern touch.</p>
+      <p>We handle everything from sharp office wear to elegant ethnic outfits, ensuring each stitch reflects excellence.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="bg-light">
+  <div class="container" data-aos="fade-up">
+    <h2 class="section-title">Our Services</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <h5>👔 Custom Shirts</h5>
+        <p>Tailored shirts with premium fit and feel.</p>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <h5>👖 Perfect Pants</h5>
+        <p>Modern trousers stitched with comfort in mind.</p>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <h5>👕 Traditional Wear</h5>
+        <p>Kurta, sherwani, and more – made to match your occasion.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery with Pricing -->
+<section id="gallery" class="container" data-aos="fade-up">
+  <h2 class="section-title">Our Work & Pricing</h2>
+  <div class="row text-center gallery">
+    <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+      <div class="position-relative">
+        <img src="C:\Users\DELL\Desktop\SLtailor\images/shirt1.jpg" alt="Shirt" class="img-fluid rounded shadow">
+        <div class="overlay">
+          <h5>Shirt</h5>
+          <p>Starting from ₹350</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+      <div class="position-relative">
+        <img src="C:\Users\DELL\Desktop\SLtailor\images/pants1.jpeg" alt="Pant" class="img-fluid rounded shadow">
+        <div class="overlay">
+          <h5>Pant</h5>
+          <p>Starting from ₹400</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+      <div class="position-relative">
+        <img src="C:\Users\DELL\Desktop\SLtailor\images/kurta1.jpeg" alt="Kurta" class="img-fluid rounded shadow">
+        <div class="overlay">
+          <h5>Kurta</h5>
+          <p>Starting from ₹450</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="bg-light" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title">Client Testimonials</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4" data-aos="fade-right">
+        <blockquote>
+          “The fit was perfect and the service was very professional. Highly recommend S.L Tailors!”
+          <footer class="blockquote-footer mt-2">Ravi Kumar</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-6 mb-4" data-aos="fade-left">
+        <blockquote>
+          “Very detail-oriented tailoring. My sherwani came out stunning. Will definitely come again.”
+          <footer class="blockquote-footer mt-2">Radhika</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container text-center" data-aos="fade-up">
+  <h2 class="section-title">Contact Us</h2>
+  <p>📍 Old Jail Street, Nala Bazar, Secunderabad, Hyderabad</p>
+  <p>📞 <a href="tel:+919949037611">+91 99490 37611</a></p>
+  <p>📧 <a href="mailto:manideepsanga007@gmail.com">manideepsanga007@gmail.com</a></p>
+  <a class="btn-whatsapp" href="https://wa.me/919949037611" target="_blank" aria-label="Chat with us on WhatsApp">📲 Chat on WhatsApp</a>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 S.L Tailors. All rights reserved.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
+
+
+
+
